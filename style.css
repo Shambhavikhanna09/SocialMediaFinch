@@ -1,0 +1,94 @@
+
+html {
+    overflow-x: hidden;
+    width: 100% !important;
+   }
+.body
+{
+    width: 100% !important;
+    height: auto;
+}
+
+:root
+{
+    --dark: rgb(12, 12, 32);
+    --primary: rgba(255, 193, 7, 1);
+    --light: white;
+}
+
+button {
+    margin: 20px 10px 0 0;
+    display: block;
+    width: 500px;
+    height: 85px;
+    border-radius: 50%; /* Use a single value for simplicity */
+    border: 6px solid rgba(255, 193, 7, 1); /* Set the border color */
+    padding: 10px 20px;
+    outline: none;
+    color: #fff;
+    background-color: white;
+    cursor: pointer;
+    transition: width 0.5s, border 0.5s; /* Add border transition */
+    margin-right: 20px;
+}
+
+button img {
+    width: 30px;
+    float: right;
+    display: none;
+    max-width: 100%;
+    
+}
+
+button:hover img {
+    display: block;
+}
+
+button:hover {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.my-link
+{
+    color: black;
+}
+
+.ff-secondary
+{
+    font-family: 'Pacifico',cursive;
+}
+
+.fw-medium
+{
+    font-weight: 600 !important;
+}
+.fw-semi-bold
+{
+    font-weight: 700 !important;
+}
+.back-to-top
+{
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+
+}
+
+
+@media (min-width: 768px) {
+    .service-container .service-item {
+      flex: 1 0 25%;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .service-container .service-item {
+      flex: 1 0 50%;
+    }
+  }
+
+ 

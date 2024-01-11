@@ -161,7 +161,7 @@
        
         background: linear-gradient(rgba(54, 74, 129, 0.5), rgba(54, 74, 129, 0.5));width: 100% !important; overflow: hidden; position: relative; align-items: left;">
 
-           
+           <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
                 
 
                 <video id="my-video" class="video-js"  loop muted playsinline style="width: 100%; height: auto; position: absolute; top: 0; left: 0; z-index: -1;">
@@ -288,12 +288,13 @@ button:hover {
 
         
         <script>
+            const player = videojs('my-video');
 
-const video = document.getElementById('my-video');
-
-video.addEventListener('loadedmetadata', () => {
-    video.play();
+player.on('loadedmetadata', () => {
+    player.play();
 });
+
+
         </script>
 
 
